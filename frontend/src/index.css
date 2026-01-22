@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Colors - Light Mode */
-  --background: hsl(0, 0%, 97%);
-  --foreground: hsl(0, 0%, 10%);
+  /* Colors - Exact Specification */
+  --background: #F9FAFB;
+  --foreground: #111827;
 
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(0, 0%, 10%);
+  --card: #FFFFFF;
+  --card-foreground: #111827;
 
-  --primary: #3B82F6;
-  --primary-hover: #2563EB;
-  --primary-foreground: hsl(0, 0%, 100%);
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --primary-foreground: #FFFFFF;
 
-  --muted: hsl(0, 0%, 96%);
-  --muted-foreground: hsl(0, 0%, 45%);
+  --muted: #F3F4F6;
+  --muted-foreground: #6B7280;
 
-  --border: hsl(0, 0%, 90%);
-  --input-bg: hsl(0, 0%, 98%);
+  --border: #E5E7EB;
+  --input-bg: #F9FAFB;
 
-  --destructive: hsl(0, 84%, 60%);
-  --destructive-hover: hsl(0, 84%, 50%);
+  --destructive: #EF4444;
+  --destructive-hover: #DC2626;
 
-  /* Status Colors - Vibrant */
+  /* Status Colors - Exact Specification */
   --status-pending: #F59E0B;
   --status-pending-bg: #FEF3C7;
   --status-pending-fg: #92400E;
@@ -31,8 +31,11 @@
   --status-inprogress-fg: #1E40AF;
 
   --status-completed: #22C55E;
-  --status-completed-bg: #D1FAE5;
+  --status-completed-bg: #DCFCE7;
   --status-completed-fg: #166534;
+
+  /* Modal */
+  --modal-overlay: rgba(0, 0, 0, 0.45);
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);

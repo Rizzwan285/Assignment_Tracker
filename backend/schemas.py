@@ -19,5 +19,7 @@ class AssignmentResponse(AssignmentBase):
     id: int
     created_time: datetime
     updated_time: datetime
+    deleted: bool
+    deleted_time: Optional[datetime] = None
 
     model_config = ConfigDict(from_attributes=True)

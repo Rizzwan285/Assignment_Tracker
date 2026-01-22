@@ -45,3 +45,42 @@ export const deleteAssignment = async (id) => {
     }
     return true;
 };
+
+// Trash/Recycle Bin APIs
+export const fetchTrash = async () => {
+    const response = await fetch(`${API_URL}/trash/list`);
+    if (!response.ok) {
+        throw new Error("Failed to fetch trash");
+    }
+    return response.json();
+};
+
+export const restoreAssignment = async (id) => {
+    const response = await fetch(`${API_URL}/${id}/restore`, {
+        method: "POST",
+    });
+    if (!response.ok) {
+        throw new Error("Failed to restore assignment");
+    }
+    return response.json();
+};
+
+export const permanentDelete = async (id) => {
+    const response = await fetch(`${API_URL}/${id}/permanent`, {
+        method: "DELETE",
+    });
+    if (!response.ok) {
+        throw new Error("Failed to permanently delete assignment");
+    }
+    return true;
+};
+
+export const emptyTrash = async () => {
+    const response = await fetch(`${API_URL}/trash/empty`, {
+        method: "DELETE",
+    });
+    if (!response.ok) {
+        throw new Error("Failed to empty trash");
+    }
+    return true;
+};

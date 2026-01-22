@@ -4,13 +4,13 @@ A full-stack web application for managing academic assignments. Built with FastA
 
 ## Features
 
-- **Complete CRUD Operations** - Create, Read, Update, and Delete assignments
-- **Live Statistics Dashboard** - Real-time count of Pending, In Progress, and Completed assignments
-- **UI Design** - Card-based layout with status indicators
-- **Date Formatting** - Human-readable dates
-- **Status Cycling** - Click status badges to update status
-- **Real-time Updates** - Instant UI refresh after any operation
-- **Persistent Storage** - PostgreSQL database
+- **Manage Assignments** - Create, read, update, and delete functionality
+- **Statistics** - View pending, in progress, and completed counts
+- **UI** - Clean card layout with status colors
+- **Dates** - Formatted for readability
+- **Status** - Click badges to update status
+- **Real-time** - Instant updates without refresh
+- **Database** - PostgreSQL storage
 
 ## Technology Stack
 
